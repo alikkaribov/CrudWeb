@@ -10,9 +10,7 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    UserDAO userDAO;
-
-    @Autowired
+    private final UserDAO userDAO;
     public UserServiceImpl(UserDAO userDAO){
         this.userDAO = userDAO;
     }
